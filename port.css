@@ -318,28 +318,26 @@ footer{
 
 }
 
-/* General navigation link styles */
+
 .nav-link {
     text-decoration: none;
     color: black;
     padding: 10px;
     font-weight: 700;
-    transition: all 0.3s ease; /* Smooth transition */
+    transition: all 0.3s ease; 
 }
 
-/* Active state with shadow and underline */
 .nav-link.active {
-    /* text-decoration: underline; */
+    
     color: rgb(255, 68, 0);
-    box-shadow: 0px 4px 10px rgba(12, 12, 12, 0.911); /* Add shadow effect */
-    border-radius: 25px; /* Optional, for smoother corners */
-    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0px 4px 10px rgba(12, 12, 12, 0.911); 
+    border-radius: 25px; 
+    transform: scale(1.1); 
 }
 
-/* Hover effect for links */
 .nav-link:hover {
     color: rgb(255, 68, 0);
-    transition: all 0.3s ease; /* Smooth hover transition */
+    transition: all 0.3s ease; 
 }
 
 @keyframes fadeIn {
