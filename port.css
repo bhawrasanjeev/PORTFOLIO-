@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   
+    background-image: url(background.avif);
+    background-size: cover;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 45px;
+    background-color: #f4f4f4;
+    color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar div {
+    padding: 10px;
+}
+.navbar div:hover {
+    color: rgb(255, 68, 0);
+    transform: scale(1.1);
+    transition: all 0.7s ease-in-out;
+}
+
+
+.portfolio {
+    font-family: "Rubik", serif;
+    font-weight: 800;
+    font-size: 38px;
+}
+
+.home, .about, .project, .others {
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.upper {
+    background-color: rgb(255, 68, 0);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.backgr {
+    height: 290px;
+    width: 279px;
+    background-image: linear-gradient(45deg, #283a29, #000000);
+    border-radius: 0 50px 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sanjeev img {
+    height: 290px;
+}
+.sanjeev img:hover {
+    transform: scale(1.05);
+    transition: all 0.9s ease; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.up_para {
+    flex: 2;
+    text-align: left;
+    padding-left: 20px;
+    font-family: "Rubik", serif;
+    font-weight: 900;
+    font-size: 28px;
+    color: #fff;
+}
+.up_para h3{
+    color: #000000;
+}
+.up_para h2{
+    color: #000000;
+}
+.up_para:hover {
+    transform: scale(1.02);
+    transition: all 0.9s ease; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.main {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+   
+}
+
+.about2 {
+    font-family: "Oswald", serif;
+    font-weight: 800;
+    font-size: 60px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.summary {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.summary h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.summary p {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.skills {
+    margin: 35px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skills h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.skills ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.skills ul li {
+    margin-bottom: 5px;
+    color: #555;  
+    font-size: 17px;
+}
+.shanu_back{
+    background-image: linear-gradient(45deg, #c95511, #df1717);
+    border-radius:  50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 459px;
+}
+.profile_img {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.profile_img img {
+    width: 350px;
+    height: 450px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    border: 23px solid #cc3009;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.profile_img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact2 {
+    font-family: "Oswald", serif;
+    font-weight: 800;
+    font-size: 60px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact2 a {
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(255, 68, 0);
+}
+
+.contact2 a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: #000;
+    background-color: #fff;
+}
+
+.others2 {
+    margin: 20px;
+    text-align: center;
+}
+
+.others2 h3, .others2 h4 {
+    font-family: "Oswald", serif;
+    font-weight: 800;
+    font-size: 60px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.others2 ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.others2 ul li {
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 20px;
+}
+.others2 a {
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(255, 68, 0);
+}
+.others2 a:hover {
+    box-shadow: 0px 0px 7px 3px rgb(255, 72, 0); 
+    background-color: transparent; 
+    color: #000;
+    cursor: pointer;
+}
+.project2 {
+    font-family: "Oswald", serif;
+    font-weight: 800;
+    font-size: 60px;
+    text-align: center;
+    margin: 20px 0;
+}
+.project2 a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(255, 68, 0);
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project2 a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: #000;
+    background-color: #fff;
+}
+
+
+.education {
+    margin: 35px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.education h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.education ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.education ul li {
+    margin-bottom: 5px;
+    color: #555;  
+    font-size: 17px;
+}
+
+footer{
+    height:70px;
+    background-color: #535353;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    font-size: 19px;
+    font-family: Arial, sans-serif;
+
+}
+
+/* General navigation link styles */
+.nav-link {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-weight: 700;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Active state with shadow and underline */
+.nav-link.active {
+    /* text-decoration: underline; */
+    color: rgb(255, 68, 0);
+    box-shadow: 0px 4px 10px rgba(12, 12, 12, 0.911); /* Add shadow effect */
+    border-radius: 25px; /* Optional, for smoother corners */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Hover effect for links */
+.nav-link:hover {
+    color: rgb(255, 68, 0);
+    transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.up_para {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.sanjeev img {
+    animation: fadeIn 2s ease-in-out;
+}
