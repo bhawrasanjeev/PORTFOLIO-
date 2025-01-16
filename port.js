@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const navLinks = document.querySelectorAll(".nav-link");
 
     const updateActiveLink = () => {
-        let currentSection = "home"; // Default to 'home'
+        let currentSection = "home"; 
 
         sections.forEach((section) => {
             const sectionTop = section.offsetTop;
@@ -22,30 +22,27 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const handleClick = (event) => {
-        // Remove 'active' from all links
+    
         navLinks.forEach((link) => link.classList.remove("active"));
-
-        // Add 'active' to the clicked link
         event.target.classList.add("active");
 
-        // Smoothly scroll to the section
+        
         const targetSectionId = event.target.getAttribute("href").slice(1);
         const targetSection = document.getElementById(targetSectionId);
         if (targetSection) {
             window.scrollTo({
                 top: targetSection.offsetTop,
-                behavior: "smooth", // Smooth scrolling
+                behavior: "smooth", 
             });
         }
 
-        // Prevent default anchor behavior
+
         event.preventDefault();
     };
 
-    // Add click event listener to navigation links
+    
     navLinks.forEach((link) => link.addEventListener("click", handleClick));
-
-    // Run the function on scroll and initial load
+    
     window.addEventListener("scroll", updateActiveLink);
     updateActiveLink();
 });
