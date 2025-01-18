@@ -195,6 +195,7 @@ body {
 }
 
 .contact2 a {
+    display: inline-block;
     margin: 10px;
     padding: 10px 15px;
     font-size: 16px;
@@ -203,11 +204,13 @@ body {
     border-radius: 5px;
     color: #fff;
     background-color: rgb(255, 68, 0);
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact2 a:hover {
     transform: scale(1.1);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 19px rgba(0, 0, 0, 0.3);
     color: #000;
     background-color: #fff;
 }
@@ -327,8 +330,8 @@ footer{
     transition: all 0.3s ease; 
 }
 
+
 .nav-link.active {
-    
     color: rgb(255, 68, 0);
     box-shadow: 0px 4px 10px rgba(12, 12, 12, 0.911); 
     border-radius: 25px; 
