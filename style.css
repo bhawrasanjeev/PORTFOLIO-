@@ -293,10 +293,18 @@ body.dark-mode .dark-mode-btn {
     background-color: transparent; 
     color: #000;
     cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.fa-file-pdf {
+    color: #161515;
+    margin-right: 8px;
+}
+
+
 .project2 {
     font-family: "Oswald", serif;
-    font-weight: 800;
+    font-weight: 800;                                
     font-size: 60px;
     text-align: center;
     margin: 20px 0;
