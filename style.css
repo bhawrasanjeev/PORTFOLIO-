@@ -6,11 +6,12 @@
 
 body {
    
-    /* background-image: url(background.avif); */
-    background-color: #ffff;
+    /* background-color: #daffef; */
+    background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
     background-size: cover;
     color: #333;
     overflow-x: hidden;
+    height: 100vh;         
 }
 
 .navbar {
@@ -36,18 +37,26 @@ body {
 }
 
 body.dark-mode {
-    background-color: #1a1a1a;
+    background: linear-gradient(90deg, #121212 0%, #1a1a1a 100%);
     color: #f4f4f4;
 }
 
 
 .navbar {
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 body.dark-mode .navbar {
     background-color: #333; 
     color: #f4f4f4; 
+}
+body.dark-mode .resume {
+    color: #333; 
+    background-color: #f4f4f4; 
+}
+body.dark-mode .hobbies {
+    color: #333; 
+    background-color: #f4f4f4; 
 }
 
 
@@ -198,6 +207,29 @@ body.dark-mode .dark-mode-btn {
     color: #555;  
     font-size: 17px;
 }
+
+.resume {
+    margin: 35px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.hobbies {
+    margin: 35px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.hobbies p {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
 .shanu_back{
     background-image: linear-gradient(45deg, #c95511, #df1717);
     border-radius:  50%;
@@ -279,37 +311,7 @@ body.dark-mode .dark-mode-btn {
     font-size: 20px;
 }
 .others2 a {
-    margin: 10px;
-    padding: 10px 15px;
-    font-size: 16px;
-    text-decoration: none;
-    border: 1px solid #333;
-    border-radius: 5px;
-    color: #fff;
-    background-color: rgb(255, 68, 0);
-}
-.others2 a:hover {
-    box-shadow: 0px 0px 7px 3px rgb(255, 72, 0); 
-    background-color: transparent; 
-    color: #000;
-    cursor: pointer;
-    transform: scale(1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.fa-file-pdf {
-    color: #161515;
-    margin-right: 8px;
-}
-
-
-.project2 {
-    font-family: "Oswald", serif;
-    font-weight: 800;                                
-    font-size: 60px;
-    text-align: center;
-    margin: 20px 0;
-}
-.project2 a {
+    width: 100%;
     display: inline-block;
     margin: 10px;
     padding: 10px 15px;
@@ -322,6 +324,49 @@ body.dark-mode .dark-mode-btn {
     transform: scale(1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.others2 a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: #000;
+    background-color: #fff;
+}
+.fa-file-pdf {
+    color: #161515;
+    margin-right: 8px;
+}
+
+.project2 {
+    font-family: "Oswald", serif;
+    font-weight: 800;                                
+    font-size: 60px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.project2 a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    margin: 6px;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(255, 68, 0);
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    justify-content: center;
+}
 
 .project2 a:hover {
     transform: scale(1.1);
@@ -329,6 +374,7 @@ body.dark-mode .dark-mode-btn {
     color: #000;
     background-color: #fff;
 }
+
 
 
 .education {
