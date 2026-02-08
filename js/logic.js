@@ -67,4 +67,22 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", updateActiveLink);
     updateActiveLink();
     AOS.init();
+
+    // Popup Logic
+    const popup = document.getElementById("portfolio-popup");
+    const yesBtn = document.getElementById("popup-yes");
+    const noBtn = document.getElementById("popup-no");
+
+    // Show popup after a short delay (e.g., 1 second)
+    setTimeout(() => {
+        popup.classList.add("show");
+    }, 1000);
+
+    yesBtn.addEventListener("click", () => {
+        window.location.href = "https://bhawrasanjeev.github.io/PORTFOLIO_2.0/"; 
+    });
+
+    noBtn.addEventListener("click", () => {
+        popup.classList.remove("show");
+    });
 });
